@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Itim', cursive;
+}
+
+.background {
+    background-color: #FFFFFF;
+    height: 100vh;
+    padding-top: 1px;
+}
+
+.title {
+    color: black;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 10%;
+}
+
+.display {
+    color: black;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.hide {
+    display: none;
+}
+
+.container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    max-width: 300px;
+
+}
+
+.tile {
+    border: 1px solid black;
+    min-width: 100px;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.playerX {
+    color: #09C372;
+}
+
+.playerO {
+    color: #498AFB;
+}
+
+.controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.controls button {
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    font-size: 20px;
+    margin-left: 1em;
+    cursor: pointer;
+}
+
+.restart {
+    background-color: #498AFB;
+}
+
+#reset {
+    background-color: #FF3860;
+}
+
+/* reset */
+html, body, div, span, h1, p, ul, li { margin: 0; padding: 0; border: 0; vertical-align: baseline; }
+*, :after, :before { -webkit-box-sizing: border-box; box-sizing: border-box; }
+ul { list-style: none; }
+
+/* grid */
+html, body, .wrap { height: 100%; line-height: 1; }
+.wrap { width: 1024px; position: relative; margin: 0 auto; padding-top: 50px; }
+.flex { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+/* typography */
+body { font-weight: 400; font-size: 16px; line-height: 20px; font-family: 'Roboto', sans-serif; color: #333; }
+h1 { font-weight: 500; font-size: 20px; margin-bottom: 30px; }
+
+/* countdown */
+.timer-box { width: 385px; height: 180px; padding-top: 50px; background: #111; }
+	.timer-box ul { width: 285px; }
+.timer { width: 285px; height: 70px; margin: 0 auto 5px; background: url('bg_timer.png') no-repeat; }
+	.timer li { width: 85px; height: 70px; font-size: 60px; line-height: 68px; color: #e1e1e1; letter-spacing: 10px; position: relative; padding-left: 4px; }
+	.timer li + li:before { width: 15px; height: 70px; display: block; font-size: 60px; line-height: 58px; content: ':'; position: absolute; left: -14px; top: 0; }
+.time-name { margin: 0 auto; }
+.time-name li { width: 85px; font-size: 12px; color: #888; text-align: center; }
+	.timer li + li, .time-name li + li { margin-left: 15px; 

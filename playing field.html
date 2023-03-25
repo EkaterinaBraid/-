@@ -1,0 +1,132 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <script src="./index.js"></script>
+	    <script src="./index.js"></script>
+
+
+	
+    <title>Крестики и нолики</title>
+</head>
+<body>
+ <style>
+      #navbar {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        border: 2px solid #FFFFFF;
+        border-radius: 30px 10px;
+        width: 600 px;
+        text-align: center;
+        background-color: #DCDCDC;
+      }
+      #navbar li { display: inline; }
+      #navbar a {
+        color: #000000;
+        padding: 5px 10px;
+        text-decoration: none;
+        font-weight: bold;
+        display: inline-block;
+        width: 100px;
+      }
+      #navbar a:hover {
+        border-radius: 20px 5px;
+        background-color: #7FFFD4;
+      }
+flex { display: flex; }
+ 
+
+	
+
+    </style>
+  </head>
+ 
+  <body>
+  
+    <ul id="navbar">
+	  <li><a href="playing field.html">Игровое поле</a></li>
+      <li><a href="rating.html">Рейтинг</a></li>
+      <li><a href="activeplayers.html">Активные игроки</a></li>
+      <li><a href="gamehistory.html">История игр</a></li>
+	   <li><a href="listofplayers.html">Список игроков</a></li>
+	   <li><a href="exit.html">Выход</a></li>
+    </ul>
+
+	</div>
+	
+<div><span id="time"></span></div>
+
+
+<script type="text/javascript">
+function startTimer(duration, display) {
+    var timer = duration, minutes, seconds;
+    setInterval(function () {
+        minutes = parseInt(timer / 60, 10);
+        seconds = parseInt(timer % 60, 10);
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.textContent = minutes + ":" + seconds;
+
+        if (--timer < 0) {
+			document.location.href='/redirect-link'; // or input desable
+        }
+    }, 1000);
+}
+
+window.onload = function () {
+    var fiveMinutes = 60 * 5,
+        display = document.querySelector('#time');
+    startTimer(fiveMinutes, display);
+};
+</script>
+<main class="background">
+        <section class="title">
+            <h1>Крестики и нолики</h1>
+			<h3>Текущие игроки Х и О</h3>
+        </section>
+        <section class="display">
+		
+            Игрок <span class="display-player playerX"> X </span>ходит
+        </section>
+        <section class="container">
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+        </section>
+        <section class="display announcer hide"></section>
+        <section class="controls">
+            <button id="reset">Сыграть еще раз</button>
+		<style>
+   .btn {
+    display: inline-block; /* Строчно-блочный элемент */
+    background: #red /* Серый цвет фона */
+    color: #fff; /* Белый цвет текста */
+    padding: 1rem 1.5rem; /* Поля вокруг текста */
+    text-decoration: none; /* Убираем подчёркивание */
+    border-radius: 3px; /* Скругляем уголки */
+   }
+  </style>
+ </head>
+ <body> 
+  <a href="index.html" class="btn">Выйти в меню</a>
+        </section>
+		
+
+	
+</html>
+</html>
+
